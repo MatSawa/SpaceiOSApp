@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import RxSwift
+
+public protocol LaunchRepositorable {
+    func save(entity: LaunchEntity) -> Single<LaunchEntity>
+    func getAll() -> Single<[LaunchEntity]>
+}
+
+public class LaunchRepository: Repository<LaunchEntity>, LaunchRepositorable {
+}

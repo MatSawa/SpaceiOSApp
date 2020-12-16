@@ -11,32 +11,23 @@ import RealmSwift
 import RxSwift
 import RxRealm
 
-protocol AbstractRepository {
-    associatedtype T
-    func getAll() -> Single<[T]>
-    func query(with predicate: NSPredicate,
-               sortDescriptors: [NSSortDescriptor]) -> Single<[T]>
-    func save(entity: T) -> Completable
-    func delete(primaryKey: String) -> Completable
-}
-
-public class Repository<T: RealmSwiftObject>: AbstractRepository {
+public class Repository<T: Object> {
     private let realm: Realm
     private let scheduler: ImmediateSchedulerType
     
-    init(_ realm: Realm,_ scheduler: ImmediateSchedulerType) {
+    public init(_ realm: Realm,_ scheduler: ImmediateSchedulerType) {
         self.realm = realm
         self.scheduler = scheduler
     }
     
-    func getAll() -> Single<[T]> {
+    public func getAll() -> Single<[T]> {
         return Single.deferred {
             let objects = self.realm.objects(T.self)
             return .just(objects.toArray())
         }.subscribeOn(scheduler)
     }
     
-    func query(with predicate: NSPredicate, sortDescriptors: [NSSortDescriptor]) -> Single<[T]> {
+    public func query(with predicate: NSPredicate, sortDescriptors: [NSSortDescriptor]) -> Single<[T]> {
         return Single.deferred {
             let objects = self.realm.objects(T.self)
                 .filter(predicate)
@@ -46,13 +37,13 @@ public class Repository<T: RealmSwiftObject>: AbstractRepository {
         }.subscribeOn(scheduler)
     }
     
-    func save(entity: T) -> Completable {
-        return Completable.deferred {
+    public func save(entity: T) -> Single<T> {
+        return Single.deferred {
             return self.realm.rx.save(entity: entity)
         }.subscribeOn(scheduler)
     }
     
-    func delete(primaryKey: String) -> Completable {
+    public func delete(primaryKey: String) -> Completable {
         return Completable.deferred {
             return self.realm.rx.delete(primaryKey: primaryKey)
         }.subscribeOn(scheduler)

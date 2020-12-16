@@ -6,3 +6,20 @@
 //
 
 import Foundation
+import Domain
+import RxSwift
+import RxCocoa
+
+class LaunchRowViewModel {
+    let title: BehaviorRelay<String>
+    let description: BehaviorRelay<String>
+    let imageUrl: BehaviorRelay<String>
+    let launch: Launch
+
+    init(launch: Launch) {
+        self.launch = launch
+        self.title = .init(value: launch.name)
+        self.description = .init(value: launch.description)
+        self.imageUrl = .init(value: launch.imageUrl)
+    }
+}

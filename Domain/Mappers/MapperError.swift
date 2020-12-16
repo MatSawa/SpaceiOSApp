@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+public enum MapperError: Error {
+    case emptyValue(value: String)
+}

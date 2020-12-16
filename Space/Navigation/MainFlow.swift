@@ -14,14 +14,12 @@ enum MainStep {
     case launch(with: Launch)
 }
 
-protocol MainFlowable {
+protocol MainFlowable: Dismissable {
     var rootViewController: UINavigationController { get }
     func navigate(to step: MainStep)
 }
 
 class MainFlow: BaseFlow, MainFlowable {
-    var rootViewController = UINavigationController()
-
     func navigate(to step: MainStep) {
         switch step {
         case .start:
@@ -30,10 +28,12 @@ class MainFlow: BaseFlow, MainFlowable {
             showLaunch(launch)
         }
     }
-
+    
     private func showLaunch(_ launch: Launch) {
+        guard let viewController = resolver.resolve(LaunchController.self, argument: launch) else { return }
+        rootViewController.pushViewController(viewController, animated: true)
     }
-
+    
     private func start() {
         guard let viewController = resolver.resolve(LaunchesController.self) else { return }
         rootViewController.pushViewController(viewController, animated: true)

@@ -5,3 +5,6 @@
   Created by Mateusz Sawa on 16/12/2020.
   
 */
+
+// MARK: Launch view
+"launchTitle" = "Launch: %@, Date: %@";
