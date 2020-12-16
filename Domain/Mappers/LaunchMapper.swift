@@ -22,6 +22,6 @@ public extension LaunchResponse {
 
 public extension LaunchEntity {
     func toLaunch() -> Launch {
-        return Launch(id: id, name: name, description: details, imageUrl: imageUrl, date: date)
+        return .init(id: id, name: name, description: details, imageUrl: imageUrl, date: date)
     }
 }
