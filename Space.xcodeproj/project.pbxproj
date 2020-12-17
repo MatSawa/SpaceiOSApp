@@ -486,7 +486,6 @@
 		33A478C42583E6F600F9B7B5 /* SpaceTests */ = {
 			isa = PBXGroup;
 			children = (
-				33E65A61258B46870068BD85 /* Extensions */,
 				33E65994258B3AF00068BD85 /* ViewModelsTest */,
 				33E65A1D258B42BD0068BD85 /* Mocks */,
 				33A478C72583E6F600F9B7B5 /* Info.plist */,
@@ -694,18 +693,11 @@
 		33E65A1D258B42BD0068BD85 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				33E65A62258B46950068BD85 /* StringMock.swift */,
 				33E65A41258B43080068BD85 /* MockGetLaunchesUseCase.swift */,
 				33E65A58258B45920068BD85 /* LaunchMock.swift */,
 			);
 			path = Mocks;
-			sourceTree = "<group>";
-		};
-		33E65A61258B46870068BD85 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				33E65A62258B46950068BD85 /* StringMock.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CB581BF796FE897FD4723DAF /* Pods */ = {
