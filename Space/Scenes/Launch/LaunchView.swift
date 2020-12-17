@@ -52,6 +52,7 @@ class LaunchView: UIView {
         textView.textContainerInset = .zero
         textView.backgroundColor = .clear
         textView.textColor = R.color.textColor()
+        textView.isUserInteractionEnabled = false
         return textView
     }()
     
