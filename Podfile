@@ -11,6 +11,7 @@ def realm
 end
 
 def test_pods
+  rx_swift
   pod 'RxTest'
   pod 'RxBlocking'
   pod 'Nimble'
@@ -71,5 +72,6 @@ target 'Space' do
   
   target 'SpaceTests' do
     inherit! :search_paths
+    test_pods
   end
 end

@@ -13,4 +13,12 @@ public struct Launch {
     public let description: String
     public let imageUrl: String
     public let date: Date
+    
+    public init(id: String, name: String, description: String, imageUrl: String, date: Date) {
+        self.id = id
+        self.name = name
+        self.description = description
+        self.imageUrl = imageUrl
+        self.date = date
+    }
 }

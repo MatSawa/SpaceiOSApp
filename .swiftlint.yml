@@ -30,14 +30,16 @@ opt_in_rules:
 
 included:
   - Space
-  - SpaceTests
-  - SpaceUITests
+  - Domain
+  - NetworkPlatform
+  - DatabasePlatform
   
 excluded:
   - Carthage
   - Pods
   - fastlane
   - Space/R.generated.swift
+  - SpaceTests
 
 force_cast: warning # implicitly
 force_try:

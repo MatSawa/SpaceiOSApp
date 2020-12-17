@@ -35,7 +35,6 @@
 		33A478AF2583E6F400F9B7B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A478AE2583E6F400F9B7B5 /* AppDelegate.swift */; };
 		33A478B82583E6F600F9B7B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A478B72583E6F600F9B7B5 /* Assets.xcassets */; };
 		33A478BB2583E6F600F9B7B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A478B92583E6F600F9B7B5 /* LaunchScreen.storyboard */; };
-		33A478C62583E6F600F9B7B5 /* SpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A478C52583E6F600F9B7B5 /* SpaceTests.swift */; };
 		33A478D12583E6F600F9B7B5 /* SpaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A478D02583E6F600F9B7B5 /* SpaceUITests.swift */; };
 		33A479102584F06D00F9B7B5 /* Offset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4790F2584F06D00F9B7B5 /* Offset.swift */; };
 		33A4793E2584FA3700F9B7B5 /* NetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A479352584FA3700F9B7B5 /* NetworkPlatform.framework */; };
@@ -65,6 +64,10 @@
 		33CA350525866636004E7188 /* NetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CA350425866636004E7188 /* NetworkAssembly.swift */; };
 		33CA351525866747004E7188 /* Bundlerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CA351425866747004E7188 /* Bundlerable.swift */; };
 		33CA351E25866831004E7188 /* ToolsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CA351D25866831004E7188 /* ToolsAssembly.swift */; };
+		33E659A4258B3B030068BD85 /* LaunchesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E659A3258B3B030068BD85 /* LaunchesViewModelTests.swift */; };
+		33E65A42258B43080068BD85 /* MockGetLaunchesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E65A41258B43080068BD85 /* MockGetLaunchesUseCase.swift */; };
+		33E65A59258B45920068BD85 /* LaunchMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E65A58258B45920068BD85 /* LaunchMock.swift */; };
+		33E65A63258B46950068BD85 /* StringMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E65A62258B46950068BD85 /* StringMock.swift */; };
 		4EED5E6B910CA6CE65BD83ED /* Pods_NetworkPlatformTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9585BA240B9FED402377462 /* Pods_NetworkPlatformTests.framework */; };
 		7CF948CABFE394126F0819CD /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F95F4B96B1AD8BCE4A412F8 /* Pods_Domain.framework */; };
 		952E0790F98C68BA2E56A1D7 /* Pods_DatabasePlatformTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5966ABF927C04B6049C0D588 /* Pods_DatabasePlatformTests.framework */; };
@@ -221,7 +224,6 @@
 		33A478BA2583E6F600F9B7B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33A478BC2583E6F600F9B7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33A478C12583E6F600F9B7B5 /* SpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		33A478C52583E6F600F9B7B5 /* SpaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceTests.swift; sourceTree = "<group>"; };
 		33A478C72583E6F600F9B7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33A478CC2583E6F600F9B7B5 /* SpaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A478D02583E6F600F9B7B5 /* SpaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceUITests.swift; sourceTree = "<group>"; };
@@ -257,6 +259,10 @@
 		33CA350425866636004E7188 /* NetworkAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAssembly.swift; sourceTree = "<group>"; };
 		33CA351425866747004E7188 /* Bundlerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundlerable.swift; sourceTree = "<group>"; };
 		33CA351D25866831004E7188 /* ToolsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsAssembly.swift; sourceTree = "<group>"; };
+		33E659A3258B3B030068BD85 /* LaunchesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewModelTests.swift; sourceTree = "<group>"; };
+		33E65A41258B43080068BD85 /* MockGetLaunchesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGetLaunchesUseCase.swift; sourceTree = "<group>"; };
+		33E65A58258B45920068BD85 /* LaunchMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchMock.swift; sourceTree = "<group>"; };
+		33E65A62258B46950068BD85 /* StringMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMock.swift; sourceTree = "<group>"; };
 		443D2C0616B6B12BC48D2EDA /* Pods_SpaceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		456D2F7FF21E6130A9A2C510 /* Pods_DatabasePlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatabasePlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		499B572C3E709C367C4EFFAA /* Pods-DatabasePlatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatabasePlatform.debug.xcconfig"; path = "Target Support Files/Pods-DatabasePlatform/Pods-DatabasePlatform.debug.xcconfig"; sourceTree = "<group>"; };
@@ -480,7 +486,9 @@
 		33A478C42583E6F600F9B7B5 /* SpaceTests */ = {
 			isa = PBXGroup;
 			children = (
-				33A478C52583E6F600F9B7B5 /* SpaceTests.swift */,
+				33E65A61258B46870068BD85 /* Extensions */,
+				33E65994258B3AF00068BD85 /* ViewModelsTest */,
+				33E65A1D258B42BD0068BD85 /* Mocks */,
 				33A478C72583E6F600F9B7B5 /* Info.plist */,
 			);
 			path = SpaceTests;
@@ -675,6 +683,31 @@
 			path = Dependency;
 			sourceTree = "<group>";
 		};
+		33E65994258B3AF00068BD85 /* ViewModelsTest */ = {
+			isa = PBXGroup;
+			children = (
+				33E659A3258B3B030068BD85 /* LaunchesViewModelTests.swift */,
+			);
+			path = ViewModelsTest;
+			sourceTree = "<group>";
+		};
+		33E65A1D258B42BD0068BD85 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				33E65A41258B43080068BD85 /* MockGetLaunchesUseCase.swift */,
+				33E65A58258B45920068BD85 /* LaunchMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		33E65A61258B46870068BD85 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				33E65A62258B46950068BD85 /* StringMock.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CB581BF796FE897FD4723DAF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -775,6 +808,7 @@
 				33A478BD2583E6F600F9B7B5 /* Sources */,
 				33A478BE2583E6F600F9B7B5 /* Frameworks */,
 				33A478BF2583E6F600F9B7B5 /* Resources */,
+				C77CB418AC60C61C5DF36EE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1207,6 +1241,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C77CB418AC60C61C5DF36EE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpaceTests/Pods-SpaceTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpaceTests/Pods-SpaceTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpaceTests/Pods-SpaceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C931F2221C1D97CF395A137A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1391,7 +1442,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33A478C62583E6F600F9B7B5 /* SpaceTests.swift in Sources */,
+				33E65A63258B46950068BD85 /* StringMock.swift in Sources */,
+				33E65A42258B43080068BD85 /* MockGetLaunchesUseCase.swift in Sources */,
+				33E65A59258B45920068BD85 /* LaunchMock.swift in Sources */,
+				33E659A4258B3B030068BD85 /* LaunchesViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
